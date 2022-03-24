@@ -350,7 +350,7 @@ under certain conditions; type 'L' for details.
 
     while user_input != "QUIT" and user_input != "Q":  # This will loop until the user terminates it.
         # Start with determining what our initial units that we are converting from are:
-        user_input = input("What would you like to convert?     (T)emperature     (D)istance     OR     view (L)icense or (W)arranty information  :     ").upper()
+        user_input = input("What would you like to convert?     (T)emperature     (D)istance     OR     view (L)icense or (W)arranty disclaimer  :     ").upper()
 
         # Now that we have that, let's begin processing in terms of that category. OR display the requested information.
         if user_input == "T":
