@@ -68,7 +68,7 @@ under certain conditions; type 'L' for details.
             continue # We want the loop to restart at this point, bringing us back to the initial prompt.
 
         # More specifically, which units are we converting from?
-        from_unit = input("Which units  would you like to convert from?  :  " + main_category.ShowAvailableUnits()).upper()
+        from_unit = input("Which units would you like to convert from?  :  " + main_category.ShowAvailableUnits()).upper()
 
         # Create a unit object of that type:
         from_unit_object = main_category.CreateUnitObject(from_unit)
@@ -100,4 +100,6 @@ under certain conditions; type 'L' for details.
 
 
 # And finally, we call the above function to begin interaction with the user:
-UserPrompt()
+# Note: This will not be executed if the user imports this file into another program:
+if __name__ == "__main__":
+    UserPrompt()
